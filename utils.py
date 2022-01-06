@@ -67,7 +67,7 @@ def load_weights(var_list, weights_file):
     :return: list of assign ops
     """
     with open(weights_file, "rb") as fp:
-        _ = np.fromfile(fp, dtype=np.int32, count=5)
+        _ = np.fromfile(fp, dtype=np.int32, count=4)
 
         weights = np.fromfile(fp, dtype=np.float32)
 
